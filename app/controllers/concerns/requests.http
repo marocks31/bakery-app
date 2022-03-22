@@ -1,0 +1,27 @@
+### Goods Index
+GET http://localhost:3000/goods
+
+### Goods Create
+POST http://localhost:3000/goods
+Content-Type: application/json
+{"name": "16 oz. light roast coffee", 
+"price": 3.25,
+"quantity": 220,
+"description": "House blend, must bring own mug/container",
+"calories": 40
+}
+
+### Goods Show
+GET http://localhost:3000/goods/1
+
+### Goods Update
+PATCH http://localhost:3000/goods/4
+Content-Type: application/json
+
+{
+  "price": 5
+}
+
+### Goods Destroy
+DELETE http://localhost:3000/goods/2
+
